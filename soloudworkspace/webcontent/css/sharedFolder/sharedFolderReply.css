@@ -1,0 +1,29 @@
+td{
+	font-family: 'Nanum Gothic', sans-serif;
+}
+.td{
+	text-align:center;'
+	border-style:none;
+}
+.colNames {
+	border-style:none;
+	border-top-style:solid;	
+	border-top-width:2px;
+	font-size:small;
+}
+tr td{
+	font-size:xx-small;
+}
+.content{
+	
+	border-style:none;
+	border-bottom-style:solid;
+	border-bottom-width:2px;
+	border-bottom-color: #e6e6e6;
+}
+.date{
+	border-style:none;
+	border-bottom-style:solid;
+	border-bottom-width:2px;
+	border-bottom-color: #e6e6e6;
+}

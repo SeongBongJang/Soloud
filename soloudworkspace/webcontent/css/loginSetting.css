@@ -1,0 +1,25 @@
+@CHARSET "UTF-8";
+body{
+	font-family: 'Nanum Gothic', sans-serif;
+}
+.button{
+	width:200px;
+	height: 40px;
+}
+thead{
+	background-color: #F6FCF7;
+	font-size: 20px;
+	text-align:center;
+}
+table.setting_table{
+	text-align:center;
+	width : 100px;
+	font-size: 13px;	
+}
+.line{
+	height: "1";
+	background-color: #F2F2F2;
+}
+#setting_list{
+	display: none;
+}

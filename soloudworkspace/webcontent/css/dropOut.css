@@ -1,0 +1,23 @@
+@CHARSET "UTF-8";
+body{
+	font-family: 'Nanum Gothic', sans-serif;
+}
+.message{
+	margin-top:300px; 
+}
+.warning{
+	text-align: center;
+	margin-top : 20px;
+}
+.button{
+	width: 100px;
+}
+.line{
+	height: 20px;
+}
+table.button_table{
+	margin: auto;
+}
+.button{
+	width:100px;
+}

@@ -1,0 +1,14 @@
+$(document).ready(function(){
+	$("#setting_button").mouseover(function(){
+		$(this).attr("src","/Soloud/image/loginSetting/setting2.png");
+	});
+	$("#setting_button").mouseout(function(){
+		$(this).attr("src","/Soloud/image/loginSetting/setting1.png");
+	});
+	$("#logout_button").mouseover(function(){
+		$(this).attr("src","/Soloud/image/loginSetting/logout2.png");
+	});
+	$("#logout_button").mouseout(function(){
+		$(this).attr("src","/Soloud/image/loginSetting/logout1.png");
+	});
+});

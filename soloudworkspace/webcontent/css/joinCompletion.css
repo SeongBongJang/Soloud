@@ -1,0 +1,25 @@
+@CHARSET "UTF-8";
+body{
+	font-family: 'Nanum Gothic', sans-serif;
+}
+.table_step{
+	margin:auto;
+	margin-top:50px;
+}
+.table_info{
+	margin:auto;
+	padding: 10px;
+}
+.section{
+	width: 800px;
+	margin: auto;
+}
+.logo{
+	display : block;
+	margin: auto;
+}
+.button{
+	display : block;
+	margin: auto;
+	width: 100px;
+}

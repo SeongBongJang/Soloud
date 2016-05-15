@@ -1,0 +1,14 @@
+.inviteButton{
+	width:30%;
+}
+
+#unInvitefriendList{
+	text-align:center;
+}
+
+.friendName {
+	width:75px;
+}
+.friendId{
+	width:100px;
+}

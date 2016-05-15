@@ -1,0 +1,44 @@
+@CHARSET "UTF-8";
+
+body{
+	font-family: 'Nanum Gothic', sans-serif;
+}
+.section{
+	width: 800px;
+	margin: auto;
+}
+fieldset{
+	border: 0px;
+}
+table.info
+{
+text-align: left;
+}
+span {
+	display: inline;
+	font: 25px bold sans-serif;
+}
+
+.login {
+	display: inline;
+	float: right;
+}
+
+.desc {
+	margin-top: 8px;
+	font-size: 12px;
+	letter-spacing: -1px;
+	margin-bottom: 10px;
+	color: #999
+}
+
+p{font: 15px bold;}
+.button{
+	width:100px;
+	display: block;
+	float: right;
+}
+.table_step{
+	margin:auto;
+	margin-top:50px;
+}

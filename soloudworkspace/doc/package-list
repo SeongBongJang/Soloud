@@ -1,0 +1,10 @@
+com.soloud.app.model
+com.soloud.per.dao
+com.soloud.per.daoimpl
+com.soloud.per.dto
+com.soloud.per.factory
+com.soloud.pre.servlet
+com.soloud.pre.uiform
+com.soloud.pre.validator
+com.soloud.util
+test

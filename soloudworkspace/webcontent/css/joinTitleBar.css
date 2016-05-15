@@ -1,0 +1,14 @@
+@CHARSET "UTF-8";
+body{
+	font-family: 'Nanum Gothic', sans-serif;
+}
+.line1 {
+	color: silver;
+}
+.line2 {
+	color: silver;
+}
+.login {
+	display: inline;
+	float: right;
+}

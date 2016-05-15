@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	   xmlns:context="http://www.springframework.org/schema/context"
+	   xmlns:p="http://www.springframework.org/schema/p"
+	   xsi:schemaLocation="http://www.springframework.org/schema/beans
+                  http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+                  http://www.springframework.org/schema/context
+                  http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+    
+    <!-- Component(Controller / Service / Repository) auto scan -->
+    <context:component-scan base-package="com.soloud.app.man" />
+    <context:component-scan base-package="com.soloud.util" />
+	
+	<bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix" value="/"/>
+		<property name="suffix" value=".jsp"/>
+		<property name="order" value="1"/>
+	</bean>  
+	
+	<!-- Bean Name View Resolver -->
+	<bean id="beanNameViewResolver" 
+		class="org.springframework.web.servlet.view.BeanNameViewResolver">
+		<property name="order">
+			<value>0</value>
+		</property>
+	</bean>
+	
+	<!-- JSON View -->
+	<bean name="JSON" class="org.springframework.web.servlet.view.json.MappingJacksonJsonView" />
+	
+	<!--  Download View -->
+	<bean name="DownView" class="com.soloud.app.man.FileDownloadView"/>
+	
+	<!-- File Upload Resolver -->
+	<bean id="multipartResolver" 
+		class="com.soloud.util.AjaxMultipartResolver">
+		<!-- maximum file size in bytes 50MB -->
+		<property name="maxUploadSize" value="52428800" />
+	</bean>
+	
+</beans>
+
+
+
+
+

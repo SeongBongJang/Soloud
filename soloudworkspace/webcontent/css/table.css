@@ -1,0 +1,37 @@
+body{
+	font-family: 'Nanum Gothic', sans-serif;
+}
+.name{
+	border-width: 2px;
+	border-color: #e6e6e6;
+	border-top-style:solid;
+	border-bottom-style:none;
+	border-left-style:none;
+	border-right-style:none;	
+	height: 40px;
+}
+.type{
+	border-width: 2px;
+	border-color: #e6e6e6;
+	border-bottom-style:none;
+	border-right-style:none;	
+	border-left-style:solid;
+	border-top-style:solid;
+	height: 40px;
+}
+
+.time{
+	border-width: 2px;
+	border-bottom-style:none;
+	border-right-style:none;
+	border-left-style:solid;
+	border-top-style:solid;	
+	border-color: #e6e6e6;
+	height: 40px;	
+}
+tr th{
+	border-top-style:none;
+	border-color: #e6e6e6;
+	height: 40px;
+	border-width: 2px;
+}

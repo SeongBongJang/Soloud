@@ -1,0 +1,43 @@
+	body{
+		font-family: 'Nanum Gothic', sans-serif;
+	}
+	#searchCondition{
+		text-align:center;
+	}
+	#selectedDelete{
+		text-align:right;
+	}
+	#searchButton{
+		height:27px;
+		width:60px;
+	}
+	ul li{
+		list-style-type: none;
+		display:inline;
+	}
+	#resultDiv table{
+		margin:0 auto;
+	}
+	#center{
+		width:70%;
+		margin:0 auto;
+	}
+	#resultTable{
+		margin:0 auto;
+		border-style:hidden;
+		border-spacing:0px;	
+		border-color: #E6E6E6;
+		text-align: left;
+		font-size: 14px;
+		color: #1F3E63;
+	}	
+	.data:hover{
+		background-color:#D0D0D0;	
+	}
+	.custom-menu {
+	    z-index:1000;
+	    position: absolute;
+	    background-color:white;
+	    border: 2px solid gray;
+	    padding: 2px;
+	}

@@ -1,0 +1,15 @@
+@CHARSET "UTF-8";
+body{
+	margin:0px auto;
+	background-image: url(/Soloud/image/titleBar/maark2.png);
+	background-repeat: repeat;
+	font-family: 'Nanum Gothic', sans-serif;
+}
+#menu{
+	margin: 0px auto;
+	left: 491px;
+	top: 98px;
+}
+#top{
+	margin-top: 10px;
+}

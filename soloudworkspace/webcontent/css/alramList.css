@@ -1,0 +1,29 @@
+@CHARSET "UTF-8";
+body{
+	display: block;
+	margin: auto;
+	font-family: 'Nanum Gothic', sans-serif;
+}
+thead{
+	background-color: #F6FCF7;
+	font-size: 20px;
+	text-align:center;
+}
+table.alram_table{
+	text-align:left;
+	width : 300px;
+	font-size: 13px;	
+}
+.line{
+	height: "4";
+	background-color: #F2F2F2;
+}
+.button{
+	width:50px;
+	height : 20px;
+	display: block;
+	float: right;
+}
+#alram_list{
+	display: none;
+}

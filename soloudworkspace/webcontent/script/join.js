@@ -1,0 +1,14 @@
+$(document).ready(function(){
+	$("#vaildation_button").mouseover(function(){
+		$(this).attr("src","/Soloud/image/join/vaildation_button2.jpg");
+	});
+	$("#vaildation_button").mouseout(function(){
+		$(this).attr("src","/Soloud/image/join/vaildation_button.jpg");
+	});
+	$("#next_button").mouseover(function(){
+		$(this).attr("src","/Soloud/image/join/next_button2.jpg");
+	});
+	$("#next_button").mouseout(function(){
+		$(this).attr("src","/Soloud/image/join/next_button.jpg");
+	});
+});

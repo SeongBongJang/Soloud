@@ -1,0 +1,25 @@
+The below listed files have been reused from foldertree.js where the following copyright can be found:
+
+   1  /*--------------------------------------------------|
+   2  | dTree 2.05 | www.destroydrop.com/javascript/tree/ |
+   3  |---------------------------------------------------|
+   4  | Copyright (c) 2002-2003 Geir Landrö               |
+   5  |                                                   |
+   6  | This script can be used freely as long as all     |
+   7  | copyright messages are intact.                    |
+   8  |                                                   |
+   9  | Updated: 17.04.2003                               |
+  10  |--------------------------------------------------*/
+
+The foldertree.js files are:
+foldertree_base.gif               foldertree_joinbottom.gif       foldertree_nolines_plus.gif
+foldertree_empty.gif              foldertree_join.gif             foldertree_page.gif
+foldertree_folder.gif             foldertree_line.gif             *foldertree_page_in_alarm.gif
+*foldertree_folder_in_alarm.gif     foldertree_minusbottom.gif     foldertree_pagina.gif
+foldertree_folderopen.gif         foldertree_minus.gif    foldertree_plusbottom.gif
+foldertree_folderopen_in_alarm.gif  foldertree_musicfolder.gif    foldertree_plus.gif
+foldertree_globe.gif              foldertree_nolines_empty.gif  foldertree_question.gif
+foldertree_imgfolder.gif          foldertree_nolines_minus.gif  foldertree_trash.gif
+
+The files marked by a star are new files derived from original ones and created in the context of dftree to demonstrate the ability of dtree to change dynamically the pictures (for instance in case of an alarm related to the folder).
+

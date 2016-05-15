@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns='http://www.springframework.org/schema/beans'
+		xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+		xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+  http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
+  http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd
+  http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.0.xsd
+  http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.0.xsd">
+		
+		
+	
+<bean id='dataSource' class='org.apache.commons.dbcp.BasicDataSource' destroy-method='close'>
+	<property name='driverClassName' value='oracle.jdbc.driver.OracleDriver'/>
+	<property name='url' value='jdbc:oracle:thin:@127.0.0.1:1521:XE'/>
+	<property name='username' value='soloudTest'/>
+	<property name='password' value='dudwls'/>
+	<property name='maxActive' value='50'/>
+	<property name='maxIdle' value='5'/>
+	<property name='minIdle' value='1'/>
+	<property name='poolPreparedStatements' value='true'/>
+	<property name='initialSize' value='1'/>
+</bean>	
+
+<bean id='transactionManager' class='org.springframework.jdbc.datasource.DataSourceTransactionManager'>
+	<property name='dataSource' ref='dataSource'/>
+</bean>
+
+
+<bean id='alarmKindDao' class='com.soloud.per.daoimpl.AlarmKindDAOImpl'>
+	<property name='transactionManager' ref='transactionManager'/>
+</bean>
+
+<bean id='alarmDao' class='com.soloud.per.daoimpl.AlarmDAOImpl'>
+	<property name='transactionManager' ref='transactionManager'/>
+</bean>
+
+<bean id='availableFileAuthGroupDao' class='com.soloud.per.daoimpl.AvailableFileAuthGroupDAOImpl'>
+	<property name='transactionManager' ref='transactionManager'/>
+</bean>
+
+<bean id='fileDao' class='com.soloud.per.daoimpl.FileDAOImpl'>
+	<property name='transactionManager' ref='transactionManager'/>
+</bean>
+
+<bean id='groupDao' class='com.soloud.per.daoimpl.GroupDAOImpl'>
+	<property name='transactionManager' ref='transactionManager'/>
+</bean>
+
+<bean id='mediaInfoDao' class='com.soloud.per.daoimpl.MediaInfoDAOImpl'>
+	<property name='transactionManager' ref='transactionManager'/>
+</bean>
+
+<bean id='friendDao' class='com.soloud.per.daoimpl.FriendDAOImpl'>
+	<property name='transactionManager' ref='transactionManager'/>
+</bean>
+
+<bean id='fileBinaryDao' class='com.soloud.per.daoimpl.FileBinaryDAOImpl'>
+	<property name='transactionManager' ref='transactionManager'/>
+</bean>
+
+<bean id='memberAlarmVDao' class='com.soloud.per.daoimpl.MemberAlarmVDAOImpl'>
+	<property name='transactionManager' ref='transactionManager'/>
+</bean>
+
+<bean id='memberFriendVDao' class='com.soloud.per.daoimpl.MemberFriendVDAOImpl'>
+	<property name='transactionManager' ref='transactionManager'/>
+</bean>
+
+<bean id='memberDao' class='com.soloud.per.daoimpl.MemberDAOImpl'>
+	<property name='transactionManager' ref='transactionManager'/>
+</bean>
+<bean id='memberKindDao' class='com.soloud.per.daoimpl.MemberKindDAOImpl'>
+	<property name='transactionManager' ref='transactionManager'/>
+</bean>
+<bean id='sharedFolderDao' class='com.soloud.per.daoimpl.SharedFolderDAOImpl'>
+	<property name='transactionManager' ref='transactionManager'/>
+</bean>
+<bean id='folderDao' class='com.soloud.per.daoimpl.FolderDAOImpl'>
+	<property name='transactionManager' ref='transactionManager'/>
+</bean>
+<bean id='availableFolderFriendDao' class='com.soloud.per.daoimpl.AvailableFolderFriendDAOImpl'>
+	<property name='transactionManager' ref='transactionManager'/>
+</bean>
+<bean id='replyDao' class='com.soloud.per.daoimpl.ReplyDAOImpl'>
+	<property name='transactionManager' ref='transactionManager'/>
+</bean>
+<bean id='fileGroupVDao' class='com.soloud.per.daoimpl.FileGroupVDAOImpl'>
+	<property name='transactionManager' ref='transactionManager'/>
+</bean>
+<bean id='memberFolderVDao' class='com.soloud.per.daoimpl.MemberFolderVDAOImpl'>
+	<property name='transactionManager' ref='transactionManager'/>
+</bean>
+<bean id='memberFileVDao' class='com.soloud.per.daoimpl.MemberFileVDAOImpl'>
+	<property name='transactionManager' ref='transactionManager'/>
+</bean>
+<bean id='folderFileVDao' class='com.soloud.per.daoimpl.FolderFileVDAOImpl'>
+	<property name='transactionManager' ref='transactionManager'/>
+</bean>
+<bean id='memberSharedVDao' class='com.soloud.per.daoimpl.MemberSharedVDAOImpl'>
+	<property name='transactionManager' ref='transactionManager'/>
+</bean>
+<bean id='sharedFileVDao' class='com.soloud.per.daoimpl.SharedFileVDAOImpl'>
+	<property name='transactionManager' ref='transactionManager'/>
+</bean>
+<bean id='sharedFriendVDao' class='com.soloud.per.daoimpl.SharedFriendVDAOImpl'>
+	<property name='transactionManager' ref='transactionManager'/>
+</bean>
+
+<bean id='memberFileMediaVDao' class='com.soloud.per.daoimpl.MemberFileMediaVDAOImpl'>
+	<property name='transactionManager' ref='transactionManager'/>
+</bean>
+<bean id='sharedFolderReplyVDao' class='com.soloud.per.daoimpl.SharedFolderReplyVDAOImpl'>
+	<property name='transactionManager' ref='transactionManager'/>
+</bean>
+
+<bean id='memberLimitCapacityVDao' class='com.soloud.per.daoimpl.MemberLimitCapacityVDAOImpl'>
+	<property name='transactionManager' ref='transactionManager'/>
+</bean>
+<bean id='memberFileAuthVDao' class='com.soloud.per.daoimpl.MemberFileAuthVDAOImpl'>
+	<property name='transactionManager' ref='transactionManager'/>
+</bean>
+<bean id='folderCapacityVDao' class='com.soloud.per.daoimpl.FolderCapacityVDAOImpl'>
+	<property name='transactionManager' ref='transactionManager'/>
+</bean>
+<bean id='memberShareFolderVDao' class='com.soloud.per.daoimpl.MemberShareFolderVDAOImpl'>
+	<property name='transactionManager' ref='transactionManager'/>
+</bean>
+</beans>

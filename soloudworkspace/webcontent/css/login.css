@@ -1,0 +1,47 @@
+@CHARSET "UTF-8";
+body{
+	background: url("/Soloud/image/login/cloud4.png") no-repeat;
+	background-size:cover;
+	font-family: 'Nanum Gothic', sans-serif;
+}
+.section{
+	margin-top: 350px;
+}
+.id_textField{
+	display : block;
+	margin : auto;
+	margin-top : 20px;
+	width: 300px;
+	height: 30px;
+	font-size: 20px;
+}
+.pwd_textField{
+	display : block;
+	margin : auto;
+	margin-top : 20px;
+	width: 300px;
+	height: 30px;
+	font-size: 20px;
+}
+#login_button{
+	display : block;
+	margin : auto;
+	margin-top : 20px;
+	width:300px;
+	height:55px;
+	font-size: 30px;
+}
+
+a{
+	margin : auto;
+	text-align: center;
+	color: white;
+	font:15px bold monospace;
+	text-decoration:none;
+}
+a:HOVER{
+	text-decoration: underline;
+}
+p{
+text-align: center;
+}

@@ -1,0 +1,14 @@
+$(document).ready(function(){
+	$("#profileSetting_button").mouseover(function(){
+		$(this).attr("src","/Soloud/image/profileSetting/profileModify_button.png");
+	});
+	$("#profileSetting_button").mouseout(function(){
+		$(this).attr("src","/Soloud/image/profileSetting/profileModify_button2.png");
+	});
+	$("#logout2_button").mouseover(function(){
+		$(this).attr("src","/Soloud/image/profileSetting/logout.png");
+	});
+	$("#logout2_button").mouseout(function(){
+		$(this).attr("src","/Soloud/image/profileSetting/logout2.png");
+	});
+});
